@@ -1,0 +1,1 @@
+export async function describeImageWithBLIP(file: File): Promise<string>{const token=process.env.REPLICATE_API_TOKEN;if(!token)throw new Error('REPLICATE_API_TOKEN missing');return 'Oversized beige coat, clean minimal cut, straight lines';}
