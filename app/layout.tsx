@@ -4,12 +4,12 @@ import { ReactNode } from 'react';
 
 export const metadata = {
   title: 'StyleMatch',
-  description: 'Encontre roupas semelhantes de forma rápida e elegante',
+  description: 'Find lookalike pieces at better prices.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
