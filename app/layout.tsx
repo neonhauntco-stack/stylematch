@@ -1,16 +1,20 @@
-// app/layout.tsx
 import './globals.css';
-import { ReactNode } from 'react';
+import { generalSans } from './fonts';
+import { cn } from '../lib/utils';
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'StyleMatch',
   description: 'Find lookalike pieces at better prices.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn('min-h-screen bg-background font-sans antialiased', generalSans.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
